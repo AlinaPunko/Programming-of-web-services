@@ -1,0 +1,61 @@
+﻿<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+<div class="row">
+    <button type="button" onclick="send('GET')">GET</button>
+    <input type="number" id="post-input" />
+    <button type="button" onclick="send('POST')">POST</button>
+    <input type="number" id="put-input" />
+    <button type="button" onclick="send('PUT')">PUT</button>
+    <button type="button" onclick="send('DELETE')">DELETE</button>
+    <script>
+    send = (method) => {
+        if (method === 'POST') {
+            $.ajax({
+                url: "/api/Result",
+                type: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                data: document.getElementById('post-input').value,
+                success: result => {
+                    alert(JSON.stringify(result));
+                },
+                error: (error) => {
+                    console.log(error);
+                }
+            })
+        }
+        else if (method === 'PUT') {
+            $.ajax({
+                url: "/api/Result",
+                data: document.getElementById('put-input').value,
+                type: "PUT",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                success: result => {
+                    alert(JSON.stringify(result));
+                },
+                error: (error) => {
+                    console.log(error);
+                }
+            })
+        }
+        else {
+            $.ajax({
+                url: "/api/Result",
+                type: method,
+                success: result => {
+                    alert(JSON.stringify(result));
+                },
+                error: (error) => {
+                    console.log(error);
+                }
+            })
+        }
+    }
+    </script>
+</div>

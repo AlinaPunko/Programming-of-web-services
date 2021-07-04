@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>index</title>
+    <meta charset="utf-8" />
+    <script src="../Scripts/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+    <table style="border: 1px solid black; padding: 5px; margin: 5px;">
+
+        <tr>
+            <td>id</td>
+            <td><input type="text" id="id" /></td>
+        </tr>
+
+        <tr>
+            <td>type</td>
+            <td><input type="text" id="type" value="json" /></td>
+        </tr>
+
+        <tr>
+            <td>sort</td>
+            <td><input type="text" id="sort" value="id" /></td>
+        </tr>
+
+        <tr>
+            <td>offset</td>
+            <td><input type="text" id="offset" /></td>
+        </tr>
+
+        <tr>
+            <td>limit</td>
+            <td><input type="text" id="limit" value="100" /></td>
+        </tr>
+
+        <tr>
+            <td>minid</td>
+            <td><input type="text" id="minid" /></td>
+        </tr>
+
+        <tr>
+            <td>maxid</td>
+            <td><input type="text" id="maxid" /></td>
+        </tr>
+
+        <tr>
+            <td>global_like</td>
+            <td><input type="text" id="global_like" /></td>
+        </tr>
+
+        <tr>
+            <td>columns</td>
+            <td><input type="text" id="columns" value="id, name, phone"/></td>
+        </tr>
+
+    </table>
+
+    <div style="padding: 5px; margin: 5px">
+        <input style="margin: 5px" type="button" onclick="getStudents()" value="getStudents" />
+        <input style="margin: 5px" type="button" onclick="getStudentById()" value="getStudentsById" />
+        <input style="margin: 5px" type="button" onclick="deleteStudent()" value="deleteStudent" />
+    </div>
+
+    <div>
+        <table style="padding: 5px; margin: 5px;">
+            <tr>
+                <td>name</td>
+                <td><input type="text" id="name-post" /></td>
+            </tr>
+            <tr>
+                <td>phone</td>
+                <td><input type="text" id="phone-post" /></td>
+            </tr>
+        </table>
+        <div style="padding: 5px; margin: 5px;">
+            <input type="button" onclick="createStudent()" value="add student" />
+        </div>
+    </div>
+
+    <div>
+        <table style="padding: 5px; margin: 5px;">
+            <tr>
+                <td>id</td>
+                <td><input type="text" id="id-put" /></td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td><input type="text" id="name-put" /></td>
+            </tr>
+            <tr>
+                <td>phone</td>
+                <td><input type="text" id="phone-put" /></td>
+            </tr>
+        </table>
+        <div style="padding: 5px; margin: 5px;">
+            <input type="button" onclick="updateStudent()" value="update student" />
+        </div>
+    </div>
+
+    <table id="tbl" style="border: 1px solid black"></table>
+
+    <div id="ans"></div>
+
+    <script>
+    getStudents();
+
+        function createStudent() {
+            let data = {
+                name: $("#name-post").val(),
+                phone: $("#phone-post").val()
+            }
+            $.ajax({
+                url: "http://localhost:51891/api/student",
+                data: data,
+                type: "POST",
+                success: result => {
+                    debugger;
+                    let html = "<div><b>successfully</b></div><div><a href = " + result.Hateoas.Href + ">new created link</a></div>";
+                    $("#ans").html(html);
+                    getStudents();
+                },
+                error: (error) => {
+                    console.log(error);
+                }
+            })
+        }
+
+        function getStudents() {
+            debugger;
+            let data = {};
+            if ($("columns").val() != "") data["columns"] = $("#columns").val();
+            if ($("type").val() != "") data["type"] = $("#type").val();
+            if ($("#sort").val() != "") data["sort"] = $("#sort").val();
+            if ($("#offset").val() != "") data["offset"] = $("#offset").val();
+            if ($("#limit").val() != "") data["limit"] = $("#limit").val();
+            if ($("#minid").val() != "") data["minid"] = $("#minid").val();
+            if ($("#maxid").val() != "") data["maxid"] = $("#maxid").val();
+            if ($("#globallike").val() != "") data["globalLike"] = $("#global_like").val();
+            $.ajax({
+                url: "http://localhost:51891/api/student",
+                data: data,
+                type: "GET",
+                contentType: "multipart/form-data",
+                success: result => {
+                    let html = "";
+                    alert(JSON.stringify(result));
+                    debugger;
+                    JSON.parse(result).forEach(r => {
+                        html +=
+                            "<tr>" +
+                            "<td>" + r.Id + "</td>" +
+                            "<td><input type='text' id='name" + r.Id + "' value='" + r.Name + "' /></td>" +
+                            "<td><input type='text' id='phone" + r.Id + "' value='" + r.Phone + "' /></td>" +
+                            "<td style='color: green'>" + r.Hateoas.Rel + "</td>" +
+                            "<td><a href = '" + r.Hateoas.Href + "'>get<a/></td>" +
+                            "</tr>";
+                    })
+                    $("#tbl").html(html);
+                },
+                error: (error) => {
+                    let html = "<div><b>successfully</b></div><div><a href = " + error.responseJSON.Href + ">error" + error.responseJSON.Rel + "</a></div > ";
+                    $("#ans").html(html);
+                }
+            })
+        }
+
+        function getStudentById() {
+            let id = $("#id").val();
+            let link = "http://localhost:51891/api/student/".concat(id);
+            $.ajax({
+                url: link,
+                type: "GET",
+                contentType: "multipart/form-data",
+                success: result => {
+                    let html = "<div><b>successfully</b></div><div><a href = " + result.Hateoas.Href + ">current link</a></div>";
+                    $("#ans").html(html);
+                    getStudents();
+                },
+                error: (error) => {
+                    if (error.status === 404) {
+                        let result = error.responseJSON;
+                        let html = "<div><b>not found</b></div><div><a href ='" + result.Href + "'>" + result.Rel + "</a></div>";
+                        $("#ans").html(html);
+                        getStudents();
+                    }
+                }
+            })
+        }
+
+        function updateStudent() {
+            let data = {
+                id: $("#id-put").val(),
+                name: $("#name-put").val(),
+                phone: $("#phone-put").val()
+            }
+            $.ajax({
+                url: "http://localhost:51891/api/student",
+                data: data,
+                type: "PUT",
+                success: result => {
+                    let html = "<div><b>successfully</b></div><div><a href = " + result.Hateoas.Href + ">new updated link</a></div>";
+                    $("#ans").html(html);
+                    getStudents();
+                },
+                error: (error) => {
+                    let html = "<div><b>erro </b></div><div><a href = " + error.responseJSON.Href + "> " + error.responseJSON.Rel +"</a></div > ";
+                    $("#ans").html(html);
+                    //console.log(error);
+                }
+            })
+        }
+
+        function deleteStudent() {
+            $.ajax({
+                url: "http://localhost:51891/api/student/" + $("#id").val(),
+                type: "DELETE",
+                contentType: "multipart/form-data",
+                success: result => {
+                    //let html = "<div><b>successfully</b></div><div><a href = " + result.Hateoas.Href + ">deleted link</a></div>";
+                    //$("#ans").html(html);
+                    getStudents();
+                },
+                error: (error) => {
+                    let html = "<div><b>successfully</b></div><div><a href = " + error.responseJSON.Href + ">error" + error.responseJSON.Rel + "</a></div > ";
+                    $("#ans").html(html);
+                }
+            })
+        }
+
+        function getResultById() {
+            $.ajax({
+                url: "http://localhost:51891/api/student/" + $("#id").val(),
+                data: { sort: $("#ans") },
+                type: "GET",
+                contentType: "multipart/form-data",
+                success: result => {
+                    $("#ans").html(JSON.stringify(result));
+                },
+                error: (error) => {
+                    console.log(error);
+                }
+            })
+        }
+    </script>
+</body>
+</html>

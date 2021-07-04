@@ -1,0 +1,10 @@
+D:\лабы\ПWС\Lab7\Lab7Service\bin\Debug\Lab7Service.dll.config
+D:\лабы\ПWС\Lab7\Lab7Service\bin\Debug\Lab7Service.dll
+D:\лабы\ПWС\Lab7\Lab7Service\bin\Debug\Lab7Service.pdb
+D:\лабы\ПWС\Lab7\Lab7Service\obj\Debug\Lab7Service.csproj.CoreCompileInputs.cache
+D:\лабы\ПWС\Lab7\Lab7Service\obj\Debug\Lab7Service.dll
+D:\лабы\ПWС\Lab7\Lab7Service\obj\Debug\Lab7Service.pdb
+D:\лабы\ПWС\Lab7\Lab7Service\bin\Debug\Newtonsoft.Json.dll
+D:\лабы\ПWС\Lab7\Lab7Service\bin\Debug\Newtonsoft.Json.xml
+D:\лабы\ПWС\Lab7\Lab7Service\obj\Debug\Lab7Service.csproj.CopyComplete
+D:\лабы\ПWС\Lab7\Lab7Service\obj\Debug\Lab7Service.csprojAssemblyReference.cache

@@ -1,0 +1,7 @@
+D:\лабы\ПWС\Lab5\Lab5Service\bin\Debug\Lab5Service.dll.config
+D:\лабы\ПWС\Lab5\Lab5Service\bin\Debug\Lab5Service.dll
+D:\лабы\ПWС\Lab5\Lab5Service\bin\Debug\Lab5Service.pdb
+D:\лабы\ПWС\Lab5\Lab5Service\obj\Debug\Lab5Service.csprojAssemblyReference.cache
+D:\лабы\ПWС\Lab5\Lab5Service\obj\Debug\Lab5Service.csproj.CoreCompileInputs.cache
+D:\лабы\ПWС\Lab5\Lab5Service\obj\Debug\Lab5Service.dll
+D:\лабы\ПWС\Lab5\Lab5Service\obj\Debug\Lab5Service.pdb

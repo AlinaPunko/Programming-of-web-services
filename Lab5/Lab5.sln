@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5Service", "Lab5Service\Lab5Service.csproj", "{7934C448-E178-4C26-A561-1CF40C8427EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5Host", "Lab5Host\Lab5Host.csproj", "{8BF05438-42F8-441D-A824-17897C41769B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5Client", "Lab5Client\Lab5Client.csproj", "{1CB82354-8B63-4994-B3C8-DDE86FC82701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7934C448-E178-4C26-A561-1CF40C8427EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7934C448-E178-4C26-A561-1CF40C8427EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7934C448-E178-4C26-A561-1CF40C8427EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7934C448-E178-4C26-A561-1CF40C8427EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF05438-42F8-441D-A824-17897C41769B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF05438-42F8-441D-A824-17897C41769B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF05438-42F8-441D-A824-17897C41769B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF05438-42F8-441D-A824-17897C41769B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CB82354-8B63-4994-B3C8-DDE86FC82701}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CB82354-8B63-4994-B3C8-DDE86FC82701}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CB82354-8B63-4994-B3C8-DDE86FC82701}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CB82354-8B63-4994-B3C8-DDE86FC82701}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66AC2E0A-FEF4-488D-8F09-A14F49A45265}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b8a8b798-0371-4c25-a2c4-22ccd69d26a2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="32f6a25b-a81f-4ab5-88ce-0ed141e3e9d3" SourceId="1" SourceUrl="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/?xsd=xsd1" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="eb2e5086-e69c-4f53-b0d1-fd5ee90ce7a5" SourceId="1" SourceUrl="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/?xsd=xsd2" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="4d4e18b3-e2a9-463c-a3d7-6752a3adccbc" SourceId="1" SourceUrl="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/?wsdl" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="09e48110-2937-4477-9acc-08883dcb5f97" SourceId="1" SourceUrl="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/?disco" />
+    <MetadataFile FileName="item2.xsd" MetadataType="Schema" ID="e09ef7b1-85e6-4c18-8b3e-64ca17c6301d" SourceId="1" SourceUrl="http://localhost:8734/Design_Time_Addresses/Lab5Service/Service1/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

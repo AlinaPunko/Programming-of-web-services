@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+</head>
+<body>
+    <input type="text" id="key" placeholder="key" />
+    <input type="text" id="value" placeholder="value" />
+    <input type="text" id="method" placeholder="method" />
+
+    <input type="button" onclick="send()" value="send" />
+    <input type="text" id="result" />
+
+    <script>
+        function send() {
+            $.ajax({
+                type: "POST",
+                url: 'http://localhost:53440/api/JRPC/Single',
+                data: {
+                    id: "1",
+                    jsonrpc: "2.0",
+                    method: $("#method")[0].value,
+                    params: {
+                        key: $("#key")[0].value,
+                        value: $("#value")[0].value
+                    }
+                }
+            }).done(function (data) {
+                $("#result")[0].value = data.Result
+            });
+        }
+    </script>
+</body>
+</html>

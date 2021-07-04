@@ -1,0 +1,14 @@
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Client.exe.config
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Client.exe
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Client.pdb
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Service.dll
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Service.pdb
+D:\лабы\ПWС\Lab5\Lab5Client\bin\Debug\Lab5Service.dll.config
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.csprojAssemblyReference.cache
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.Form1.resources
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.Properties.Resources.resources
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.csproj.GenerateResource.cache
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.csproj.CoreCompileInputs.cache
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.csproj.CopyComplete
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.exe
+D:\лабы\ПWС\Lab5\Lab5Client\obj\Debug\Lab5Client.pdb

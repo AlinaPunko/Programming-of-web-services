@@ -1,0 +1,16 @@
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Client.exe.config
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Client.exe
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Client.pdb
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.csprojAssemblyReference.cache
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.Form1.resources
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.Properties.Resources.resources
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.csproj.GenerateResource.cache
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.csproj.CoreCompileInputs.cache
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.exe
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.pdb
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Service.dll
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Newtonsoft.Json.dll
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Service.pdb
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Lab7Service.dll.config
+D:\лабы\ПWС\Lab7\Lab7Client\bin\Debug\Newtonsoft.Json.xml
+D:\лабы\ПWС\Lab7\Lab7Client\obj\Debug\Lab7Client.csproj.CopyComplete

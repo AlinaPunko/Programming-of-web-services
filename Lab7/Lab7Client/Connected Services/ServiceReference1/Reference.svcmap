@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c84441c4-32ca-42d0-9a70-74e5bbf3d1fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:40121/Lab7Service/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="540aad97-1230-4afb-b8fe-ad4c2341c0ab" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="55e5c275-f75b-4a84-aeb5-60600674e06f" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="System.ServiceModel.Syndication.xsd" MetadataType="Schema" ID="816e14ae-396a-4fea-bf75-9608b38f2a32" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="Atom.xsd" MetadataType="Schema" ID="4639857f-f9f5-430e-b988-be375307542f" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="29659de3-faef-4f49-976f-26858d139bb3" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="Lab7Service.xsd" MetadataType="Schema" ID="facbb24c-3325-43b4-b591-381962df2c1f" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="d60ecbd9-79b0-444a-9eea-e306ac319c31" SourceId="1" SourceUrl="http://localhost:40121/Lab7Service/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
